@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+.DS_Store
+expo-env.d.ts
+.edge-profile/
+.edge-test*/
+shots/
+.npm-cache*/
+.home/
+android/
+ios/

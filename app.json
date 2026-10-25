@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Echo 口语",
+    "slug": "echo-speaking",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "echo",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F4F0E7",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F4F0E7"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.echo.speaking",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "允许 Echo 使用麦克风录下你的跟读，用于和标准朗读对比。"
+      }
+    },
+    "android": {
+      "package": "com.echo.speaking",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#1F342A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "允许 Echo 使用麦克风录下你的跟读，用于和标准朗读对比。"
+        }
+      ]
+    ]
+  }
+}
