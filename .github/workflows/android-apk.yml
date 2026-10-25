@@ -45,6 +45,9 @@ jobs:
       - name: Generate native Android project
         run: npx expo prebuild --platform android --no-install
 
+      - name: Use stable debug keystore
+        run: cp .github/keystores/debug.keystore android/app/debug.keystore
+
       - name: Build release APK
         working-directory: android
         run: |
