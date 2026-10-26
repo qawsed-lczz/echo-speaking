@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "baseUrl": "https://raw.githubusercontent.com/qawsed-lczz/echo-speaking/main/audio/",
+  "baseUrl": "https://qawsed-lczz.github.io/echo-speaking/audio/",
   "voice": "en-US-AndrewMultilingualNeural",
   "files": {
     "m1s1": "m1s1.mp3",

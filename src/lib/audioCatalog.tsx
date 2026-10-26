@@ -10,7 +10,7 @@ import React, {
 import { AudioCatalog } from '../types';
 
 const MANIFEST_URL =
-  'https://raw.githubusercontent.com/qawsed-lczz/echo-speaking/main/audio/manifest.json';
+  'https://qawsed-lczz.github.io/echo-speaking/audio/manifest.json';
 const CACHE_KEY = '@echo/audio-catalog/v1';
 
 interface AudioCatalogValue {

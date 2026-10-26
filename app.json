@@ -2,7 +2,7 @@
   "expo": {
     "name": "Echo 口语",
     "slug": "echo-speaking",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "echo",
@@ -22,7 +22,7 @@
     },
     "android": {
       "package": "com.echo.speaking",
-      "versionCode": 3,
+      "versionCode": 4,
       "adaptiveIcon": {
         "backgroundColor": "#1F342A",
         "foregroundImage": "./assets/android-icon-foreground.png",

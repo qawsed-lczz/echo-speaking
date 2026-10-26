@@ -143,7 +143,7 @@ export const SettingsScreen = ({ onBack }: { onBack: () => void }) => {
         <Card style={styles.card}>
           <View style={styles.aboutRow}>
             <Text style={styles.aboutLabel}>版本</Text>
-            <Text style={styles.aboutValue}>1.1.0</Text>
+            <Text style={styles.aboutValue}>1.1.1</Text>
           </View>
           <View style={styles.rowDivider} />
           <View style={styles.aboutRow}>
