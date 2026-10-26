@@ -4,6 +4,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ProgressBar } from '../components/ui';
 import { modules } from '../data/curriculum';
+import { passages } from '../data/passages';
 import { moduleStats } from '../lib/plan';
 import { colors, displayFont, layout, radius, spacing, type } from '../theme';
 import { Level } from '../types';
@@ -18,7 +19,13 @@ const filters: { key: Filter; label: string }[] = [
   { key: 3, label: '自如' },
 ];
 
-export const LibraryScreen = ({ onOpenModule }: { onOpenModule: (id: string) => void }) => {
+export const LibraryScreen = ({
+  onOpenModule,
+  onOpenPassage,
+}: {
+  onOpenModule: (id: string) => void;
+  onOpenPassage: (id: string) => void;
+}) => {
   const insets = useSafeAreaInsets();
   const { data } = useStore();
   const [filter, setFilter] = useState<Filter>('all');
@@ -32,7 +39,7 @@ export const LibraryScreen = ({ onOpenModule }: { onOpenModule: (id: string) => 
       contentContainerStyle={[styles.scroll, { paddingTop: insets.top + 14 }]}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={styles.eyebrow}>LIBRARY · 48 句</Text>
+      <Text style={styles.eyebrow}>LIBRARY · 120 句 · 12 篇短文</Text>
       <Text style={styles.title}>句库</Text>
       <Text style={styles.lead}>
         八个发音要点，从连读到语调。每句都能单独精练，也可以整章顺下来。
@@ -113,6 +120,36 @@ export const LibraryScreen = ({ onOpenModule }: { onOpenModule: (id: string) => 
         })}
       </View>
 
+      <View style={styles.passageHeader}>
+        <Text style={styles.passageTitle}>短文 · {passages.length} 篇</Text>
+        <Text style={styles.passageHint}>整篇听，整篇读</Text>
+      </View>
+      <View style={styles.passageList}>
+        {passages.map((passage) => (
+          <Pressable
+            key={passage.id}
+            onPress={() => onOpenPassage(passage.id)}
+            style={({ pressed }) => [styles.passageCard, pressed && { opacity: 0.7 }]}
+            accessibilityRole="button"
+            accessibilityLabel={`打开短文 ${passage.title}`}
+          >
+            <View style={styles.passageIcon}>
+              <Ionicons name="document-text-outline" size={17} color={colors.inkSoft} />
+            </View>
+            <View style={{ flex: 1 }}>
+              <View style={styles.passageTitleRow}>
+                <Text style={styles.passageName}>{passage.title}</Text>
+                <Text style={styles.passageEn}>{passage.en}</Text>
+              </View>
+              <Text style={styles.passageSummary} numberOfLines={2}>
+                {passage.summary}
+              </Text>
+            </View>
+            <Ionicons name="chevron-forward" size={16} color={colors.faint} />
+          </Pressable>
+        ))}
+      </View>
+
       <Text style={styles.footer}>每一句都配有 IPA、听感拆解和一个最小练习。</Text>
     </ScrollView>
   );
@@ -184,6 +221,42 @@ const styles = StyleSheet.create({
   cardSummary: { fontSize: 12, lineHeight: 18, color: colors.muted, marginTop: 4 },
   progressRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: spacing.lg },
   progressText: { fontSize: 10, color: colors.faint, minWidth: 46, textAlign: 'right' },
+  passageHeader: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+    justifyContent: 'space-between',
+    marginTop: spacing.xxl,
+    marginBottom: spacing.md,
+  },
+  passageTitle: { fontSize: 17, fontWeight: '600', color: colors.ink },
+  passageHint: { fontSize: 10, color: colors.faint },
+  passageList: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.lg,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.line,
+    overflow: 'hidden',
+  },
+  passageCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    padding: spacing.lg,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.line,
+  },
+  passageIcon: {
+    width: 36,
+    height: 36,
+    borderRadius: 12,
+    backgroundColor: colors.bgDeep,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  passageTitleRow: { flexDirection: 'row', alignItems: 'baseline', gap: 7 },
+  passageName: { fontSize: 14, fontWeight: '600', color: colors.ink },
+  passageEn: { fontSize: 9, color: colors.faint, letterSpacing: 0.4 },
+  passageSummary: { fontSize: 11, lineHeight: 17, color: colors.muted, marginTop: 3 },
   footer: {
     fontSize: 11,
     color: colors.faint,

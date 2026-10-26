@@ -29,6 +29,30 @@ export interface Module {
   sentences: Sentence[];
 }
 
+export interface PassageLine {
+  /** A / B are the two speakers, N is narration. */
+  speaker: 'A' | 'B' | 'N';
+  text: string;
+}
+
+export interface Passage {
+  id: string;
+  title: string;
+  en: string;
+  summary: string;
+  level: Level;
+  focus: string;
+  tip: string;
+  lines: PassageLine[];
+}
+
+/** Remote audio catalog, fetched from GitHub raw and cached locally. */
+export interface AudioCatalog {
+  version: number;
+  baseUrl: string;
+  files: Record<string, string>;
+}
+
 export interface SentenceProgress {
   attempts: number;
   /** 0-100 */

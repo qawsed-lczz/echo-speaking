@@ -7,6 +7,7 @@ import { WaveMark } from './src/components/ui';
 import { StoreProvider, useStore } from './src/state/store';
 import { colors, displayFont } from './src/theme';
 import { setHapticsEnabled } from './src/lib/haptics';
+import { AudioCatalogProvider } from './src/lib/audioCatalog';
 import { OnboardingScreen } from './src/screens/OnboardingScreen';
 import { HomeScreen } from './src/screens/HomeScreen';
 import { LibraryScreen } from './src/screens/LibraryScreen';
@@ -14,10 +15,12 @@ import { ModuleScreen } from './src/screens/ModuleScreen';
 import { LessonScreen } from './src/screens/LessonScreen';
 import { ProgressScreen } from './src/screens/ProgressScreen';
 import { SettingsScreen } from './src/screens/SettingsScreen';
+import { PassageScreen } from './src/screens/PassageScreen';
 
 type Route =
   | { name: 'lesson'; ids: string[]; title: string; source: 'plan' | 'library'; startIndex?: number }
   | { name: 'module'; moduleId: string }
+  | { name: 'passage'; passageId: string }
   | { name: 'settings' };
 
 const Splash = () => (
@@ -95,6 +98,10 @@ const Shell = () => {
     );
   }
 
+  if (top?.name === 'passage') {
+    return <PassageScreen passageId={top.passageId} onBack={pop} />;
+  }
+
   if (top?.name === 'settings') {
     return <SettingsScreen onBack={pop} />;
   }
@@ -113,7 +120,10 @@ const Shell = () => {
         />
       ) : null}
       {tab === 'library' ? (
-        <LibraryScreen onOpenModule={(moduleId) => push({ name: 'module', moduleId })} />
+        <LibraryScreen
+          onOpenModule={(moduleId) => push({ name: 'module', moduleId })}
+          onOpenPassage={(passageId) => push({ name: 'passage', passageId })}
+        />
       ) : null}
       {tab === 'progress' ? (
         <ProgressScreen
@@ -129,10 +139,12 @@ const Shell = () => {
 export default function App() {
   return (
     <SafeAreaProvider>
-      <StoreProvider>
-        <StatusBar style="dark" />
-        <Shell />
-      </StoreProvider>
+      <AudioCatalogProvider>
+        <StoreProvider>
+          <StatusBar style="dark" />
+          <Shell />
+        </StoreProvider>
+      </AudioCatalogProvider>
     </SafeAreaProvider>
   );
 }

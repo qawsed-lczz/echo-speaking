@@ -12,3 +12,6 @@ shots/
 .home/
 android/
 ios/
+.env
+.env.local
+.env.*.local

@@ -1,5 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import {
   Animated,
   Pressable,
@@ -16,7 +16,7 @@ import { moduleOfSentence, plainText, sentenceById } from '../data/curriculum';
 import { dateKey } from '../lib/dates';
 import { successFeedback, tapFeedback } from '../lib/haptics';
 import { MASTERED_AT, streakOf } from '../lib/plan';
-import { speakSentence, stopSpeaking } from '../lib/speech';
+import { usePlayback } from '../lib/usePlayback';
 import { colors, displayFont, ipaFont, layout, radius, spacing, type } from '../theme';
 import { Rating } from '../types';
 import { useStore } from '../state/store';
@@ -48,60 +48,29 @@ export const LessonScreen = ({
   const [index, setIndex] = useState(Math.min(startIndex, Math.max(ids.length - 1, 0)));
   const [sessionSize, setSessionSize] = useState(Math.max(1, ids.length - startIndex));
   const [finished, setFinished] = useState(false);
-  const [speaking, setSpeaking] = useState(false);
   const [slow, setSlow] = useState(false);
   const [busy, setBusy] = useState(false);
   const fade = useRef(new Animated.Value(1)).current;
   const scrollRef = useRef<ScrollViewInstance | null>(null);
-  const mounted = useRef(true);
 
   const sentence = sentenceById[ids[index]];
   const module = sentence ? moduleOfSentence(sentence.id) : null;
   const today = dateKey();
   const progress = ids.length ? ((index + 1) / ids.length) * 100 : 0;
 
-  useEffect(() => {
-    mounted.current = true;
-    return () => {
-      mounted.current = false;
-      stopSpeaking();
-    };
-  }, []);
-
-  const play = useCallback(async () => {
-    if (!sentence || speaking) {
-      stopSpeaking();
-      setSpeaking(false);
-      return;
-    }
-    const rate = slow ? Math.max(0.55, data.settings.rate * 0.72) : data.settings.rate;
-    setSpeaking(true);
-    tapFeedback();
-    await speakSentence(plainText(sentence.text), rate, {
-      onDone: () => {
-        if (mounted.current) setSpeaking(false);
-      },
-      onError: () => {
-        if (mounted.current) setSpeaking(false);
-      },
-    });
-  }, [data.settings.rate, sentence, slow, speaking]);
-
-  useEffect(() => {
-    if (!data.settings.autoPlay || !sentence || finished) return;
-    const timer = setTimeout(() => {
-      play();
-    }, 420);
-    return () => clearTimeout(timer);
-    // Only auto-play when the sentence changes.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sentence?.id, finished]);
+  const playback = usePlayback({
+    id: sentence?.id ?? '',
+    text: sentence ? plainText(sentence.text) : '',
+    rate: data.settings.rate,
+    slow,
+    autoPlay: data.settings.autoPlay && !finished,
+  });
+  const speaking = playback.playing;
 
   const rate = (value: Rating) => {
     if (!sentence || busy) return;
     setBusy(true);
-    stopSpeaking();
-    setSpeaking(false);
+    playback.stop();
     completeSentence(sentence.id, value);
     if (value > 0) successFeedback();
     else tapFeedback();
@@ -247,9 +216,12 @@ export const LessonScreen = ({
           <Card style={styles.listenCard}>
             <View style={styles.listenTop}>
               <Pressable
-                onPress={play}
+                onPress={() => {
+                  tapFeedback();
+                  playback.play();
+                }}
                 style={[styles.playButton, speaking && styles.playButtonActive]}
-                accessibilityLabel="播放标准朗读"
+                accessibilityLabel="播放美式朗读"
               >
                 <Ionicons
                   name={speaking ? 'pause' : 'play'}
@@ -260,7 +232,7 @@ export const LessonScreen = ({
               </Pressable>
               <View style={{ flex: 1, marginLeft: 16 }}>
                 <Text style={styles.listenTitle}>
-                  {speaking ? '正在朗读…' : '听标准朗读'}
+                  {speaking ? '正在播放…' : '听美式朗读'}
                 </Text>
                 <Text style={styles.listenSub}>
                   {slow ? '慢速 · 先听清每个音' : '原速 · 注意词与词的连接'}

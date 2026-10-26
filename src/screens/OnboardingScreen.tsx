@@ -175,7 +175,7 @@ export const OnboardingScreen = () => {
             <View style={styles.statRow}>
               <Stat value="8" label="发音要点" />
               <View style={styles.statDivider} />
-              <Stat value="48" label="经典例句" />
+              <Stat value="120" label="例句" />
               <View style={styles.statDivider} />
               <Stat value="5–15" label="分钟 / 天" />
             </View>

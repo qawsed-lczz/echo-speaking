@@ -143,16 +143,16 @@ export const SettingsScreen = ({ onBack }: { onBack: () => void }) => {
         <Card style={styles.card}>
           <View style={styles.aboutRow}>
             <Text style={styles.aboutLabel}>版本</Text>
-            <Text style={styles.aboutValue}>1.0.0</Text>
+            <Text style={styles.aboutValue}>1.1.0</Text>
           </View>
           <View style={styles.rowDivider} />
           <View style={styles.aboutRow}>
             <Text style={styles.aboutLabel}>课程</Text>
-            <Text style={styles.aboutValue}>8 个要点 · 48 句</Text>
+            <Text style={styles.aboutValue}>8 个要点 · 120 句 · 12 篇</Text>
           </View>
           <View style={styles.rowDivider} />
           <Text style={styles.aboutNote}>
-            标准朗读目前使用设备自带的 en-US 语音合成。所有练习记录只保存在本机，不需要注册账号。
+            例句与短文使用云端口语语音，首次播放需要联网；练习记录只保存在本机，不需要注册账号。
           </Text>
         </Card>
       </View>

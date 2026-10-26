@@ -1,0 +1,662 @@
+[
+  {
+    "id": "m1s1",
+    "kind": "sentence",
+    "text": "Not at all."
+  },
+  {
+    "id": "m1s2",
+    "kind": "sentence",
+    "text": "Take it easy."
+  },
+  {
+    "id": "m1s3",
+    "kind": "sentence",
+    "text": "I'm on my way."
+  },
+  {
+    "id": "m1s4",
+    "kind": "sentence",
+    "text": "Can I ask you a question?"
+  },
+  {
+    "id": "m1s5",
+    "kind": "sentence",
+    "text": "She's always busy."
+  },
+  {
+    "id": "m1s6",
+    "kind": "sentence",
+    "text": "Go out and enjoy it."
+  },
+  {
+    "id": "m1s7",
+    "kind": "sentence",
+    "text": "Come on in."
+  },
+  {
+    "id": "m1s8",
+    "kind": "sentence",
+    "text": "What time is it?"
+  },
+  {
+    "id": "m1s9",
+    "kind": "sentence",
+    "text": "Put it on the table."
+  },
+  {
+    "id": "m1s10",
+    "kind": "sentence",
+    "text": "I'll be there in a minute."
+  },
+  {
+    "id": "m1s11",
+    "kind": "sentence",
+    "text": "She works at a bank."
+  },
+  {
+    "id": "m1s12",
+    "kind": "sentence",
+    "text": "We had a lot of fun."
+  },
+  {
+    "id": "m1s13",
+    "kind": "sentence",
+    "text": "Turn it off."
+  },
+  {
+    "id": "m1s14",
+    "kind": "sentence",
+    "text": "Can you help me out?"
+  },
+  {
+    "id": "m1s15",
+    "kind": "sentence",
+    "text": "It's an old photo."
+  },
+  {
+    "id": "m2s1",
+    "kind": "sentence",
+    "text": "I don't know."
+  },
+  {
+    "id": "m2s2",
+    "kind": "sentence",
+    "text": "Next time."
+  },
+  {
+    "id": "m2s3",
+    "kind": "sentence",
+    "text": "Good morning."
+  },
+  {
+    "id": "m2s4",
+    "kind": "sentence",
+    "text": "Big deal."
+  },
+  {
+    "id": "m2s5",
+    "kind": "sentence",
+    "text": "Just a minute."
+  },
+  {
+    "id": "m2s6",
+    "kind": "sentence",
+    "text": "I can't do it."
+  },
+  {
+    "id": "m2s7",
+    "kind": "sentence",
+    "text": "I can't believe it."
+  },
+  {
+    "id": "m2s8",
+    "kind": "sentence",
+    "text": "That was great."
+  },
+  {
+    "id": "m2s9",
+    "kind": "sentence",
+    "text": "I'll take care of it."
+  },
+  {
+    "id": "m2s10",
+    "kind": "sentence",
+    "text": "Sit down and relax."
+  },
+  {
+    "id": "m2s11",
+    "kind": "sentence",
+    "text": "I don't want to go."
+  },
+  {
+    "id": "m2s12",
+    "kind": "sentence",
+    "text": "She stopped by yesterday."
+  },
+  {
+    "id": "m2s13",
+    "kind": "sentence",
+    "text": "Let's meet at eight."
+  },
+  {
+    "id": "m2s14",
+    "kind": "sentence",
+    "text": "I need to get going."
+  },
+  {
+    "id": "m2s15",
+    "kind": "sentence",
+    "text": "Could you repeat that?"
+  },
+  {
+    "id": "m3s1",
+    "kind": "sentence",
+    "text": "What are you doing?"
+  },
+  {
+    "id": "m3s2",
+    "kind": "sentence",
+    "text": "I got a lot of it."
+  },
+  {
+    "id": "m3s3",
+    "kind": "sentence",
+    "text": "It's a better idea."
+  },
+  {
+    "id": "m3s4",
+    "kind": "sentence",
+    "text": "Let's get out of here."
+  },
+  {
+    "id": "m3s5",
+    "kind": "sentence",
+    "text": "Water under the bridge."
+  },
+  {
+    "id": "m3s6",
+    "kind": "sentence",
+    "text": "That's a little bit of everything."
+  },
+  {
+    "id": "m3s7",
+    "kind": "sentence",
+    "text": "I'll call you later."
+  },
+  {
+    "id": "m3s8",
+    "kind": "sentence",
+    "text": "It doesn't matter."
+  },
+  {
+    "id": "m3s9",
+    "kind": "sentence",
+    "text": "Let's get together soon."
+  },
+  {
+    "id": "m3s10",
+    "kind": "sentence",
+    "text": "What a beautiful day."
+  },
+  {
+    "id": "m3s11",
+    "kind": "sentence",
+    "text": "I have a lot to do."
+  },
+  {
+    "id": "m3s12",
+    "kind": "sentence",
+    "text": "She's a little tired."
+  },
+  {
+    "id": "m3s13",
+    "kind": "sentence",
+    "text": "Do you want a coffee?"
+  },
+  {
+    "id": "m3s14",
+    "kind": "sentence",
+    "text": "He's better at it than me."
+  },
+  {
+    "id": "m3s15",
+    "kind": "sentence",
+    "text": "That's a lot of trouble."
+  },
+  {
+    "id": "m4s1",
+    "kind": "sentence",
+    "text": "I'm gonna grab a coffee."
+  },
+  {
+    "id": "m4s2",
+    "kind": "sentence",
+    "text": "What do you wanna do?"
+  },
+  {
+    "id": "m4s3",
+    "kind": "sentence",
+    "text": "It's kind of a big deal."
+  },
+  {
+    "id": "m4s4",
+    "kind": "sentence",
+    "text": "I should have known."
+  },
+  {
+    "id": "m4s5",
+    "kind": "sentence",
+    "text": "Could you give me a hand?"
+  },
+  {
+    "id": "m4s6",
+    "kind": "sentence",
+    "text": "Let me think about it."
+  },
+  {
+    "id": "m4s7",
+    "kind": "sentence",
+    "text": "I'm going to call you."
+  },
+  {
+    "id": "m4s8",
+    "kind": "sentence",
+    "text": "You don't have to worry."
+  },
+  {
+    "id": "m4s9",
+    "kind": "sentence",
+    "text": "I want to ask you something."
+  },
+  {
+    "id": "m4s10",
+    "kind": "sentence",
+    "text": "What are you doing tonight?"
+  },
+  {
+    "id": "m4s11",
+    "kind": "sentence",
+    "text": "I should have told you."
+  },
+  {
+    "id": "m4s12",
+    "kind": "sentence",
+    "text": "It's kind of expensive."
+  },
+  {
+    "id": "m4s13",
+    "kind": "sentence",
+    "text": "Do you want some coffee?"
+  },
+  {
+    "id": "m4s14",
+    "kind": "sentence",
+    "text": "I'm not sure what to do."
+  },
+  {
+    "id": "m4s15",
+    "kind": "sentence",
+    "text": "Let me get back to you."
+  },
+  {
+    "id": "m5s1",
+    "kind": "sentence",
+    "text": "I didn't say he stole the money."
+  },
+  {
+    "id": "m5s2",
+    "kind": "sentence",
+    "text": "The important thing is to keep going."
+  },
+  {
+    "id": "m5s3",
+    "kind": "sentence",
+    "text": "It's not about the money, it's about the time."
+  },
+  {
+    "id": "m5s4",
+    "kind": "sentence",
+    "text": "Would you like tea or coffee?"
+  },
+  {
+    "id": "m5s5",
+    "kind": "sentence",
+    "text": "I think we should probably wait."
+  },
+  {
+    "id": "m5s6",
+    "kind": "sentence",
+    "text": "Practice makes progress, not perfect."
+  },
+  {
+    "id": "m5s7",
+    "kind": "sentence",
+    "text": "I never said that."
+  },
+  {
+    "id": "m5s8",
+    "kind": "sentence",
+    "text": "That's exactly what I mean."
+  },
+  {
+    "id": "m5s9",
+    "kind": "sentence",
+    "text": "We need to talk about this."
+  },
+  {
+    "id": "m5s10",
+    "kind": "sentence",
+    "text": "It's not a big deal."
+  },
+  {
+    "id": "m5s11",
+    "kind": "sentence",
+    "text": "I'd love to come."
+  },
+  {
+    "id": "m5s12",
+    "kind": "sentence",
+    "text": "She's really good at it."
+  },
+  {
+    "id": "m5s13",
+    "kind": "sentence",
+    "text": "The first one is better."
+  },
+  {
+    "id": "m5s14",
+    "kind": "sentence",
+    "text": "I thought you knew."
+  },
+  {
+    "id": "m5s15",
+    "kind": "sentence",
+    "text": "Let's start with the basics."
+  },
+  {
+    "id": "m6s1",
+    "kind": "sentence",
+    "text": "If I were you, I'd take the offer."
+  },
+  {
+    "id": "m6s2",
+    "kind": "sentence",
+    "text": "Are you coming or not?"
+  },
+  {
+    "id": "m6s3",
+    "kind": "sentence",
+    "text": "I bought apples, oranges, and bananas."
+  },
+  {
+    "id": "m6s4",
+    "kind": "sentence",
+    "text": "Well, that's not exactly what I meant."
+  },
+  {
+    "id": "m6s5",
+    "kind": "sentence",
+    "text": "You did what?"
+  },
+  {
+    "id": "m6s6",
+    "kind": "sentence",
+    "text": "The thing is, we don't have much time."
+  },
+  {
+    "id": "m6s7",
+    "kind": "sentence",
+    "text": "Could you say that again?"
+  },
+  {
+    "id": "m6s8",
+    "kind": "sentence",
+    "text": "I'm not sure, to be honest."
+  },
+  {
+    "id": "m6s9",
+    "kind": "sentence",
+    "text": "Would you rather stay or go?"
+  },
+  {
+    "id": "m6s10",
+    "kind": "sentence",
+    "text": "If it rains, we'll stay home."
+  },
+  {
+    "id": "m6s11",
+    "kind": "sentence",
+    "text": "She said she'd call, but she didn't."
+  },
+  {
+    "id": "m6s12",
+    "kind": "sentence",
+    "text": "You're coming, aren't you?"
+  },
+  {
+    "id": "m6s13",
+    "kind": "sentence",
+    "text": "First, warm up; then, record yourself."
+  },
+  {
+    "id": "m6s14",
+    "kind": "sentence",
+    "text": "Really? I had no idea."
+  },
+  {
+    "id": "m6s15",
+    "kind": "sentence",
+    "text": "Let's take a break, shall we?"
+  },
+  {
+    "id": "m7s1",
+    "kind": "sentence",
+    "text": "I need a bit of sleep."
+  },
+  {
+    "id": "m7s2",
+    "kind": "sentence",
+    "text": "The bad bed is back."
+  },
+  {
+    "id": "m7s3",
+    "kind": "sentence",
+    "text": "He looked at the cup."
+  },
+  {
+    "id": "m7s4",
+    "kind": "sentence",
+    "text": "Walk and talk."
+  },
+  {
+    "id": "m7s5",
+    "kind": "sentence",
+    "text": "My house is quite nice."
+  },
+  {
+    "id": "m7s6",
+    "kind": "sentence",
+    "text": "Don't go home alone."
+  },
+  {
+    "id": "m7s7",
+    "kind": "sentence",
+    "text": "Please sit down."
+  },
+  {
+    "id": "m7s8",
+    "kind": "sentence",
+    "text": "The cat sat on the mat."
+  },
+  {
+    "id": "m7s9",
+    "kind": "sentence",
+    "text": "He said he was sad."
+  },
+  {
+    "id": "m7s10",
+    "kind": "sentence",
+    "text": "Look at the moon."
+  },
+  {
+    "id": "m7s11",
+    "kind": "sentence",
+    "text": "I love the color."
+  },
+  {
+    "id": "m7s12",
+    "kind": "sentence",
+    "text": "Walk to the car."
+  },
+  {
+    "id": "m7s13",
+    "kind": "sentence",
+    "text": "My bike is outside."
+  },
+  {
+    "id": "m7s14",
+    "kind": "sentence",
+    "text": "The boy enjoys the noise."
+  },
+  {
+    "id": "m7s15",
+    "kind": "sentence",
+    "text": "How now, brown cow?"
+  },
+  {
+    "id": "m8s1",
+    "kind": "sentence",
+    "text": "Three thin thinkers."
+  },
+  {
+    "id": "m8s2",
+    "kind": "sentence",
+    "text": "I really like the rural area."
+  },
+  {
+    "id": "m8s3",
+    "kind": "sentence",
+    "text": "Very well, thank you."
+  },
+  {
+    "id": "m8s4",
+    "kind": "sentence",
+    "text": "She watched and laughed."
+  },
+  {
+    "id": "m8s5",
+    "kind": "sentence",
+    "text": "He runs, jumps, and swims."
+  },
+  {
+    "id": "m8s6",
+    "kind": "sentence",
+    "text": "The weather is getting better."
+  },
+  {
+    "id": "m8s7",
+    "kind": "sentence",
+    "text": "This is the thing."
+  },
+  {
+    "id": "m8s8",
+    "kind": "sentence",
+    "text": "She sells seashells."
+  },
+  {
+    "id": "m8s9",
+    "kind": "sentence",
+    "text": "Red lorry, yellow lorry."
+  },
+  {
+    "id": "m8s10",
+    "kind": "sentence",
+    "text": "Very warm weather."
+  },
+  {
+    "id": "m8s11",
+    "kind": "sentence",
+    "text": "He watched TV."
+  },
+  {
+    "id": "m8s12",
+    "kind": "sentence",
+    "text": "She needs three things."
+  },
+  {
+    "id": "m8s13",
+    "kind": "sentence",
+    "text": "The judge judged gently."
+  },
+  {
+    "id": "m8s14",
+    "kind": "sentence",
+    "text": "I think it's the third."
+  },
+  {
+    "id": "m8s15",
+    "kind": "sentence",
+    "text": "We really lapped it up."
+  },
+  {
+    "id": "p1",
+    "kind": "passage",
+    "text": "Hi, could I get a medium latte, please? Sure. Would you like that hot or iced? Iced, please. And can you make it with oat milk? Of course. Anything else? That's it. How much is that? Five fifty. I'll have it ready in a minute."
+  },
+  {
+    "id": "p2",
+    "kind": "passage",
+    "text": "Excuse me, how do I get to the library? Go straight down this street and turn left at the second light. Is it far from here? Not really. It's about a ten-minute walk. Thanks. Is there a coffee shop on the way? Yeah, there's one right across from the library."
+  },
+  {
+    "id": "p3",
+    "kind": "passage",
+    "text": "Hey, it's me. Are you free tonight? I think so. What's up? A few of us are going to see a movie. Wanna come? What time does it start? Around eight. We'll grab dinner first. Sounds good. Text me the address."
+  },
+  {
+    "id": "p4",
+    "kind": "passage",
+    "text": "What seems to be the problem? I've had a sore throat for a few days. Any fever or cough? A little, but nothing serious. I'll take a look. Open wide and say ah. Okay, doctor."
+  },
+  {
+    "id": "p5",
+    "kind": "passage",
+    "text": "So, tell me a little about yourself. I'm a grad student in computer science, and I've been working on speech apps. What got you interested in that? I struggled with English pronunciation, so I built a tool to help myself. That's a great origin story. Thanks. I'd love to keep working on it."
+  },
+  {
+    "id": "p6",
+    "kind": "passage",
+    "text": "Did you finish the reading for tomorrow? Almost. I've got one more chapter. Want to study together at the library? Sure. What time works for you? How about seven? Works for me. I'll bring coffee."
+  },
+  {
+    "id": "p7",
+    "kind": "passage",
+    "text": "Good morning. May I see your passport and ticket? Here you go. I'm checking one bag. Would you like a window or an aisle seat? Aisle, please. Is the flight on time? Yes, boarding starts at ten twenty. Great. Which gate is it?"
+  },
+  {
+    "id": "p8",
+    "kind": "passage",
+    "text": "How's everything tonight? Actually, the soup is a little cold. I'm so sorry. Can I bring you a fresh one? That'd be great, thanks. Of course. Can I get you anything else? We're good for now."
+  },
+  {
+    "id": "p9",
+    "kind": "passage",
+    "text": "Hey, I don't think we've met. I'm Alex. Nice to meet you. I'm Jamie. How do you know Sam? We work together. What about you? We went to college together. Small world. What do you do now? I'm a designer. You?"
+  },
+  {
+    "id": "p10",
+    "kind": "passage",
+    "text": "Hi, I'm here to see the one-bedroom. Great. It's on the third floor. Follow me. How much is the rent? Twelve hundred a month, utilities included. Is it quiet at night? Pretty quiet. The bedroom faces the courtyard."
+  },
+  {
+    "id": "p11",
+    "kind": "passage",
+    "text": "Thanks for the talk. How did you measure the results? We tracked progress over eight weeks. And what surprised you the most? How much daily practice mattered. Would this work for beginners? I think so. The key is starting small."
+  },
+  {
+    "id": "p12",
+    "kind": "passage",
+    "text": "What are you up to this weekend? Nothing much. I might go hiking if the weather's nice. Want some company? Yeah, that'd be fun. Do you have a car? I do. I can pick you up around nine. Perfect. I'll bring snacks."
+  }
+]
